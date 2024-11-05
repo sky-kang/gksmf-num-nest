@@ -1,7 +1,7 @@
 const { test, expect } = require("@jest/globals");
 const { spawn } = require("child_process");
 
-test("매개변수가 부족함", () => {
+test("매개변수 부족", () => {
     const main = spawn("node", ["main.js", "avg"]);
     const outputs = [];
     main.stdout.on("data", (chunk) => {
@@ -10,7 +10,7 @@ test("매개변수가 부족함", () => {
 
     main.stdout.on("end", () => {
         const output = outputs.join("").trim();
-        expect(output).toBe("매개변수가 부족합니다!");
+        expect(output).toBe("매개변수가 부족합니다.");
     });
 });
 
@@ -23,7 +23,7 @@ test("잘못된 명령어", () => {
 
     main.stdout.on("end", () => {
         const output = outputs.join("").trim();
-        expect(output).toBe("잘못된 명령어입니다!");
+        expect(output).toBe("잘못된 명령어입니다.");
     });
 });
 
