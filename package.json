@@ -1,15 +1,19 @@
 {
-  "name": "gksmf-num-nest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
- "scripts": {
-  "test": "jest"
-},
-  "keywords": [],
-  "author": "",
+  "name": "@yourusername/gksmf-num-nest",
+  "version": "0.0.1",
+  "description": "oss assignment #1",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "numnest": "./main.js"
+  },
+  "author": "Kang Haneul",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
   }
 }
+
+
