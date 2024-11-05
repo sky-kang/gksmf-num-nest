@@ -17,7 +17,7 @@ switch (command) {
         result = lib.factorial(numbers[0]);  
         break;
     default:
-        console.log("Wrong command! Please use 'avg', 'prime', or 'factorial'.");
+        console.log("잘못된 명령어입니다.");
         process.exit(1);
 }
 
